@@ -19,6 +19,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - run: echo "'${{ github.event.inputs.MT_NAME }}'"
-      - run: echo "'${{ github.event.inputs.MT_FOLDER }}'"
+      - run: echo "${{ inputs.MT_NAME }}"
+      - run: echo "${{ inputs.MT_FOLDER }}"
         
