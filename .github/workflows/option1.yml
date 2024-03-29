@@ -13,9 +13,14 @@ on:
         description: 'MT Folder location'
         required: true
 
+      environment:
+        type: string
+        required: true
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
