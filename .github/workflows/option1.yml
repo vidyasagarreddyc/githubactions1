@@ -6,8 +6,10 @@ on:
       MT_NAME:
         description: 'MT Name'
         required: true
+        string: true
         
       MT_FOLDER:
+        type: string
         description: 'MT Folder location'
         required: true
 
