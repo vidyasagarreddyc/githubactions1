@@ -6,7 +6,7 @@ on:
       MT_NAME:
         description: 'MT Name'
         required: true
-        string: true
+        type: string
         
       MT_FOLDER:
         type: string
