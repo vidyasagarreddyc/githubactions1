@@ -27,4 +27,5 @@ jobs:
       - run: echo "${{ inputs.MT_NAME }}"
       - run: echo "${{ inputs.MT_FOLDER }}"
       - run: echo "${{ inputs.environment }}"
+      - run: echo "This is from env ${{ vars.test }}"
         
