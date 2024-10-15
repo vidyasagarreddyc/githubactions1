@@ -7,6 +7,4 @@ jobs:
   call-reusable-workflow:
     name: Call Reusable Workflow
     uses: vidyasagarreddyc/artifact-test/.github/workflows/master.yml@main
-    with:
-      # Pass any required inputs here
-    secrets: inherit
+    
