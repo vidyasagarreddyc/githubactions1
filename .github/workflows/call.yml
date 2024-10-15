@@ -1,13 +1,15 @@
-name: Main Workflow
+name: Caller Workflow
 
 on:
   workflow_dispatch:
+    inputs:
+      event_type:
+        description: 'Event type to pass to the reusable workflow'
+        required: true
+        default: 'manual_trigger'
 
 jobs:
   call-reusable-workflow:
-    name: Call Reusable Workflow
-    uses: vidyasagarreddyc/githubactions2/.github/workflows/master.yml@main
+    uses: ./.github/workflows/reusable-workflow.yml
     with:
-      app_version: "1.0"
-      environment: "dev"
-    
+      event_type: ${{ github.event.inputs.event_type }}
