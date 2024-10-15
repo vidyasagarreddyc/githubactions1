@@ -10,5 +10,4 @@ jobs:
     with:
       app_version: "1.0"
       environment: "dev"
-      called_from: "main-workflow"
     
