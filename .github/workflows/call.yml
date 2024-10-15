@@ -10,6 +10,6 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: ./.github/workflows/reusable-workflow.yml
+    uses: vidyasagarreddyc/githubactions2/.github/workflows/master.yml@main
     with:
       event_type: ${{ github.event.inputs.event_type }}
