@@ -7,4 +7,6 @@ jobs:
   call-reusable-workflow:
     name: Call Reusable Workflow
     uses: vidyasagarreddyc/githubactions2/.github/workflows/master.yml@main
+    with:
+      app_version: "1.0"
     
