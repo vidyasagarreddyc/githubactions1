@@ -9,4 +9,5 @@ jobs:
     uses: vidyasagarreddyc/githubactions2/.github/workflows/master.yml@main
     with:
       app_version: "1.0"
+      environment: "dev"
     
