@@ -12,4 +12,5 @@ jobs:
   call-reusable-workflow:
     uses: vidyasagarreddyc/githubactions2/.github/workflows/master.yml@main
     with:
-      event_type: ${{ github.event.inputs.event_type }}
+      environment: "dev"
+      version: "1.0"
