@@ -13,4 +13,4 @@ jobs:
     uses: vidyasagarreddyc/githubactions2/.github/workflows/master.yml@main
     with:
       environment: "dev"
-      version: "1.0"
+      app_version: "1.0"
